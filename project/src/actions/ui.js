@@ -1,0 +1,7 @@
+const ui = {
+  FETCH_UI_CONTENT: 'FETCH_UI_CONTENT',
+  STORE_UI_CONTENT: 'STORE_UI_CONTENT',
+  IS_LOADING: 'IS_LOADING'
+};
+
+export { ui };

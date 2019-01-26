@@ -1,0 +1,92 @@
+.property-item {
+  display: flex;
+  margin-bottom: var(--spacing-x-3);
+  flex-direction: column;
+  color: var(--col-default);
+  cursor: pointer;
+
+  @media (--view-width-med) {
+    flex-direction: row;
+  }
+
+  &__col {
+    flex-basis: 100%;
+    position: relative;
+
+    @media (--view-width-med) {
+      flex-basis: 50%;
+    }
+
+    &--right {
+      padding: var(--spacing-x-5) var(--spacing-x-5) var(--spacing-x-8);
+    }
+  }
+
+  &__guide-price {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 0 var(--spacing-x-5);
+    display: flex;
+    height: 44px;
+    align-items: center;
+
+    &-right {
+      margin-left: auto;
+      display: flex;
+    }
+  }
+
+  &__attribute {
+    height: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 var(--spacing-x-4);
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      left: 0;
+      speak: none;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--property-type {
+      &::before {
+        background: url(/assets/icons/residential.svg) no-repeat;
+      }
+    }
+
+    &--bedrooms {
+      &::before {
+        background: url(/assets/icons/bedrooms.svg) no-repeat;
+      }
+    }
+
+    &--bathrooms {
+      &::before {
+        background: url(/assets/icons/bathrooms.svg) no-repeat;
+      }
+    }
+
+    &--reception-rooms {
+      &::before {
+        background: url(/assets/icons/receptions.svg) no-repeat;
+      }
+    }
+  }
+}

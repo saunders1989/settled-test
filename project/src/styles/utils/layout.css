@@ -1,0 +1,54 @@
+@media screen and (-ms-high-contrast: active) and (--view-width-med),
+  screen and (-ms-high-contrast: none) and (--view-width-med) {
+  html {
+    overflow-y: scroll;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@for $i from 0 to 20 {
+  .mt-x$(i) {
+    margin-top: var(--spacing-x-$(i));
+  }
+
+  .mr-x$(i) {
+    margin-right: var(--spacing-x-$(i));
+  }
+
+  .mb-x$(i) {
+    margin-bottom: var(--spacing-x-$(i));
+  }
+
+  .ml-x$(i) {
+    margin-left: var(--spacing-x-$(i));
+  }
+
+  .pt-x$(i) {
+    padding-top: var(--spacing-x-$(i));
+  }
+
+  .pr-x$(i) {
+    padding-right: var(--spacing-x-$(i));
+  }
+
+  .pb-x$(i) {
+    padding-bottom: var(--spacing-x-$(i));
+  }
+
+  .pl-x$(i) {
+    padding-left: var(--spacing-x-$(i));
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.property-header {
+  max-height: 400px;
+}

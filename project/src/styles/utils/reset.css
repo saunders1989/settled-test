@@ -1,0 +1,144 @@
+/* stylelint-disable */
+/* ==========================================================================
+  Reset
+
+  * Baseline
+  * Layout
+  * Actions and inputs
+  ========================================================================== */
+
+/* Baseline
+ ========================================================================== */
+
+body {
+  background: var(--col-white);
+  color: var(--col-default);
+  font-family: var(--font-base);
+  margin: 0;
+  min-width: var(--min-width);
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* stylelint-disable property-no-unknown */
+  font-smoothing: always;
+  /* stylelint-enable property-no-unknown */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* Layout
+ ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  display: block;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Actions and inputs
+ ========================================================================== */
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  background: transparent;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  letter-spacing: inherit;
+  overflow: visible;
+  -webkit-font-smoothing: inherit;
+}
+
+button,
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+button,
+input {
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-base);
+  font-size: 100%;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}

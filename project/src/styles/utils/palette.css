@@ -1,0 +1,9 @@
+@each $color in var(--colors) {
+  .color--$(color) {
+    color: var(--col-$(color));
+  }
+
+  .background--$(color) {
+    background-color: var(--col-$(color));
+  }
+}

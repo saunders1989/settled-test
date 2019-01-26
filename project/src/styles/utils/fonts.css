@@ -1,0 +1,25 @@
+/* ==========================================================================
+  Fonts
+ ========================================================================== */
+
+:root {
+  --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-base-size: 14px;
+}
+
+.heading {
+  font-size: 25px;
+  line-height: calc(30 / 25);
+  letter-spacing: -.25px;
+}
+
+.subheading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: -.1px;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+# osx
+.DS_Store
+
+# node
+node_modules
+logs
+*.log
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# server specific
+server/public
+public

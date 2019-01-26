@@ -1,0 +1,103 @@
+/* ==========================================================================
+  Variables
+
+  * Colours
+  * Measurements
+  * Other
+
+ ========================================================================== */
+
+/* Colours
+ ========================================================================== */
+
+:root {
+  --col-white: #fff; /* white */
+  --col-black: #000; /* black */
+
+  /* Primary colour palette */
+  --col-brand: #ed0722;
+  --col-default: #333;
+  --col-alt: #757575;
+  --col-highlight: #8230df;
+
+  /* Secondary colour palette */
+  --col-success: #008660;
+  --col-notification: #be207a;
+  --col-info: #087bb4;
+  --col-error: #cb061d;
+  --col-highlight-hover: #490d91;
+  --col-co-app: #437f97;
+
+  /* Neutral colour palette */
+  --col-disabled: #d6d6d6;
+  --col-outline-grey: #e2e8ee;
+  --col-alt-background: #fafbfd;
+
+  /* Illustration palette */
+  --col-pink: #d62793;
+  --col-bright-purple: #aa81f7;
+  --col-light-purple: #9681bb;
+  --col-purple: #7350a0;
+  --col-deep-purple: #391572;
+  --col-dark-blue: #0e3043;
+  --col-light-blue: #2f99d5;
+  --col-turquoise: #5edab0;
+  --col-dark-green: #63682f;
+  --col-apple-green: #a3c23a;
+  --col-lime-green: #cbd62a;
+  --col-yellow: #fdd301;
+  --col-light-orange: #edaa14;
+  --col-orange: #ef8421;
+  --col-red: #eb1d26;
+  --col-copper: #83291b;
+  --col-darker-grey: #9b9b9b;
+  --col-dark-grey: #c5ced1;
+  --col-mid-grey: #dce4e6;
+  --col-light-grey: #f3f4f6;
+  --col-off-white: #fcfcfc;
+
+  /* Chart palette */
+  --col-purple-a: #ac83e9;
+  --col-purple-b: #c7adf9;
+  --col-purple-c: #f0e8fa;
+
+  /* Measurements
+   ========================================================================== */
+
+  --base-spacing: 6px;
+
+  @for $i from 0 to 30 {
+    --spacing-x-$(i): calc(var(--base-spacing) * $i);
+  }
+
+  --min-width: 320px;
+  --mid-width: 858px;
+  --max-width: 1175px;
+  --max-width-xl: 1440px;
+
+  @custom-media --view-width-xsml (min-width: 320px);
+  @custom-media --view-width-sml (min-width: 375px);
+  @custom-media --view-width-med (min-width: 769px);
+  @custom-media --view-width-lrg (min-width: 922px);
+  @custom-media --view-width-xlrg (min-width: 1376px);
+
+  /* Other
+   ========================================================================== */
+
+  /* transitions */
+  --transition-speed-s: 150ms;
+  --transition-speed-m: 300ms;
+  --transition-speed-l: 450ms;
+
+  /* z-indexes */
+  --z-bottom: 1;
+  --z-middle: 10;
+  --z-top: 100;
+  --z-override-top: 1000;
+
+  /* shadows */
+  --drop-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+
+  /* colours */
+  --colors: white, black, brand, default, alt, highlight, success, notification, info, error, disabled, outline-grey, alt-background, highlight-hover;
+}

@@ -1,0 +1,101 @@
+{
+  "title": "Settled Properties",
+  "properties": [
+    {
+      "propertyType": "house",
+      "address": {
+        "addressLine1": "136 Somewhere Road",
+        "addressLine2": "Catford",
+        "postcode": "SE33 1AA",
+        "city": "London",
+        "county": "Greater London"
+      },
+      "numBedrooms": 3,
+      "leadImageURI": "https://static.settled.co.uk/homes/1.jpg",
+      "dateListed": "2018-12-05T14:07:49.000Z",
+      "price": 500000,
+      "features": [
+        "Period Features",
+        "Gas Central Heating"
+      ],
+      "numBathrooms": 1,
+      "numReceptionRooms": 2
+    },
+    {
+      "propertyType": "house",
+      "address": {
+        "addressLine1": "16 Another Road",
+        "addressLine2": "Lewisham",
+        "postcode": "SE13 1TD",
+        "city": "London",
+        "county": "Greater London"
+      },
+      "numBedrooms": 2,
+      "leadImageURI": "https://static.settled.co.uk/homes/2.jpg",
+      "dateListed": "2018-12-15T14:07:49.000Z",
+      "price": 300000,
+      "features": [
+        "Off-Street Parking"
+      ],
+      "numBathrooms": 1,
+      "numReceptionRooms": 1
+    },
+    {
+      "propertyType": "house",
+      "address": {
+        "addressLine1": "13 Nowhere Road",
+        "addressLine2": "Catford",
+        "postcode": "M5 1SS",
+        "city": "Manchester",
+        "county": "Greater Manchester"
+      },
+      "numBedrooms": 3,
+      "leadImageURI": "https://static.settled.co.uk/homes/3.jpg",
+      "dateListed": "2018-12-25T14:07:49.000Z",
+      "price": 200000,
+      "features": [
+        "Fireplace"
+      ],
+      "numBathrooms": 1,
+      "numReceptionRooms": 1
+    },
+    {
+      "propertyType": "flat",
+      "address": {
+        "addressLine1": "1 Middle Road",
+        "addressLine2": "",
+        "postcode": "SE4 1AT",
+        "city": "Sheffield",
+        "county": "South Yorkshire"
+      },
+      "numBedrooms": 1,
+      "leadImageURI": "https://static.settled.co.uk/homes/4.jpg",
+      "dateListed": "2018-12-08T14:07:49.000Z",
+      "price": 150000,
+      "features": [
+      ],
+      "numBathrooms": 1,
+      "numReceptionRooms": 1
+    },
+    {
+      "propertyType": "flat",
+      "address": {
+        "addressLine1": "5 Endof Road",
+        "addressLine2": "",
+        "postcode": "SE4 1AT",
+        "city": "Bristol",
+        "county": "Bristol"
+      },
+      "numBedrooms": 2,
+      "leadImageURI": "https://static.settled.co.uk/homes/5.jpg",
+      "dateListed": "2018-12-30T14:07:49.000Z",
+      "price": 350000,
+      "features": [
+        "Period Features"
+      ],
+      "numBathrooms": 1,
+      "numReceptionRooms": 1
+    }
+  ],
+  "selectedProperty": null
+}

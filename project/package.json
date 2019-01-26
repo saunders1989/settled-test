@@ -1,0 +1,159 @@
+{
+  "name": "react-starter",
+  "author": "Alex Saunders",
+  "version": "0.0.1",
+  "description": "Settled",
+  "repository": {
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean && yarn test && yarn build:bundles && export NODE_ENV=build",
+    "server": "NODE_ENV=production webpack",
+    "build:bundles": "cross-env NODE_ENV=build webpack",
+    "clean": "del-cli public/",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0",
+    "lint": "yarn lint:css && yarn lint:js",
+    "lint:css": "stylelint src/styles/*.css src/styles/**/*.css --config .stylelintrc",
+    "lint:js": "eslint src server cli *.js configs --ext js,jsx --config .eslintrc",
+    "test": "yarn lint && jest --runInBand",
+    "test:snapshots": "jest --updateSnapshot --runInBand"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-jest": "22.4.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-lodash": "3.2.11",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-plugin-transform-async-to-generator": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "body-parser": "1.18.2",
+    "caniuse-lite": "1.0.30000833",
+    "cross-env": "5.1.4",
+    "css-loader": "0.28.11",
+    "del-cli": "1.1.0",
+    "enquire.js": "2.1.6",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16.3": "1.3.0",
+    "enzyme-to-json": "3.3.4",
+    "eslint": "4.19.1",
+    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-jest": "21.15.0",
+    "eslint-plugin-react": "7.7.0",
+    "express": "4.16.3",
+    "express-unless": "0.3.1",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "file-loader": "1.1.11",
+    "fs-extra": "5.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "husky": "0.14.3",
+    "jest": "22.4.3",
+    "lodash": "4.17.10",
+    "lodash-webpack-plugin": "0.11.4",
+    "lost": "8.2.1",
+    "mini-css-extract-plugin": "0.4.0",
+    "nodemon": "1.17.3",
+    "postcss-at-rules-variables": "0.1.5",
+    "postcss-class-prefix": "0.3.0",
+    "postcss-conditionals": "2.1.0",
+    "postcss-cssnext": "3.1.0",
+    "postcss-custom-properties": "6.3.1",
+    "postcss-each": "0.10.0",
+    "postcss-extend": "1.0.5",
+    "postcss-for": "2.1.1",
+    "postcss-hexrgba": "1.0.0",
+    "postcss-import": "11.1.0",
+    "postcss-loader": "2.1.3",
+    "postcss-math": "0.0.10",
+    "postcss-mixins": "6.1.0",
+    "postcss-nested": "3.0.0",
+    "postcss-plugin-px2rem": "0.7.0",
+    "postcss-simple-vars": "4.1.0",
+    "pug": "2.0.3",
+    "pug-loader": "2.4.0",
+    "react-docgen-typescript": "1.3.2",
+    "react-styleguidist": "7.0.19",
+    "remote-redux-devtools": "0.5.13",
+    "style-loader": "0.19.1",
+    "stylelint": "8.4.0",
+    "stylelint-config-standard": "18.2.0",
+    "uglifyjs-webpack-plugin": "1.2.4",
+    "webpack": "4.10.2",
+    "webpack-cli": "3.0.1",
+    "webpack-dev-middleware": "3.1.3",
+    "webpack-dev-server": "3.1.4",
+    "webpack-hot-middleware": "2.22.2",
+    "whatwg-fetch": "2.0.4"
+  },
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "classnames": "2.2.5",
+    "copy-webpack-plugin": "4.5.1",
+    "moment": "^2.24.0",
+    "npm": "6.4.0",
+    "prop-types": "15.6.1",
+    "react": "16.3.0",
+    "react-dom": "16.3.0",
+    "react-hot-loader": "3.1.3",
+    "react-redux": "5.0.7",
+    "react-router": "4.2.0",
+    "react-router-config": "1.0.0-beta.4",
+    "react-router-dom": "4.1.1",
+    "redux": "3.6.0",
+    "redux-actions": "2.3.0",
+    "redux-logger": "3.0.6",
+    "redux-saga": "0.16.0",
+    "reselect": "3.0.1",
+    "svgson": "2.1.1",
+    "webpack-node-externals": "1.7.2",
+    "yarn": "1.7.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "config": {
+    "OUTPUT_NAME": "main",
+    "DEV_PORT": "3000"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ],
+    "testURL": "http://localhost/",
+    "verbose": true,
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "setupFiles": [
+      "./src/tests/setupTests.js"
+    ],
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "views"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "html"
+    ],
+    "coverageDirectory": "<rootDir>/coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

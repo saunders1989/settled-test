@@ -1,0 +1,14 @@
+@import './utils/variables.css';
+@import './utils/reset.css';
+@import './utils/fonts.css';
+@import './utils/grid.css';
+@import './utils/layout.css';
+@import './utils/palette.css';
+
+/* atoms */
+
+/* molecules */
+@import './components/molecules/property-item.css';
+
+/* organisms */
+@import './components/organisms/property-list.css';
