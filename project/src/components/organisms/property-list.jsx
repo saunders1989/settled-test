@@ -10,14 +10,21 @@ class PropertyList extends React.Component {
   }
 
   render() {
-    const { properties } = this.props;
+    const { properties, propertyTypeFilter, propertyValueFilter } = this.props;
 
     const classNames = classHelper('property-list');
+    const propertyList = properties.filter((property) => {
+      return (propertyTypeFilter.value === 'all' || propertyTypeFilter.value === property.propertyType) &&
+        (propertyValueFilter.value === 'all' || (propertyValueFilter.value === 'over-200' ?
+          property.price > 200000 ? true : false
+        : propertyValueFilter.value === 'under-200' ?
+          property.price <= 200000 ? true : false : false))
+    });
 
     return (
       <div className={classNames}>
         {
-          properties.map((property, index) => {
+          propertyList.map((property, index) => {
             return (
               <PropertyItem
                 key={index}
@@ -61,7 +68,9 @@ PropertyList.propTypes = {
       numReceptionRooms: PropTypes.number
     })
   ),
-  goToProperty: PropTypes.func
+  goToProperty: PropTypes.func,
+  propertyTypeFilter: PropTypes.object,
+  propertyValueFilter: PropTypes.object
 };
 
 export default PropertyList;

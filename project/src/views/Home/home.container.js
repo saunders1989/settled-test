@@ -21,10 +21,10 @@ function mapDispatchToProps(dispatch) {
       dispatch(actions.fetchProperties());
     },
     setFilter(filterType, value) {
-      console.log(filterType, value);
+      dispatch(actions.setFilter({ filterType, value }));
     },
     clearFilters() {
-      console.log('cklear');
+      dispatch(actions.clearFilters());
     }
   };
 }

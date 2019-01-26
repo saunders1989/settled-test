@@ -13,7 +13,7 @@
       }
     ]
   },
-  "PropertyValueFilter": {
+  "propertyValueFilter": {
     "label": "Property value",
     "value": "all",
     "options": [
@@ -22,7 +22,7 @@
         "value": "under-200"
       },
       {
-        "name": "Over 200,000",
+        "name": "Over 200,001",
         "value": "over-200"
       }
     ]

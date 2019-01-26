@@ -19,9 +19,9 @@ class Filters extends React.Component {
           <select
             value={propertyTypeFilter.value}
             id="property-type"
-            onChange={(e) => this.props.setFilter('PropertyValueFilter', e.target.value)}
+            onChange={(e) => this.props.setFilter('propertyTypeFilter', e.target.value)}
           >
-            <option value="All">All</option>
+            <option value="all">All</option>
             {
               propertyTypeFilter.options.map((item, index) => {
                 return (
@@ -38,9 +38,9 @@ class Filters extends React.Component {
           <select
             value={propertyValueFilter.value}
             id="property-type"
-            onChange={(e) => this.props.setFilter('PropertyValueFilter', e.target.value)}
+            onChange={(e) => this.props.setFilter('propertyValueFilter', e.target.value)}
           >
-            <option value="All">All</option>
+            <option value="all">All</option>
             {
               propertyValueFilter.options.map((item, index) => {
                 return (

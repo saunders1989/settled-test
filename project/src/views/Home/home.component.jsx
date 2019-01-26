@@ -25,11 +25,16 @@ class Home extends React.Component {
         <h1 className="heading text-center mt-x3 mb-x10">{content.title}</h1>
         <Filters
           propertyTypeFilter={uiContent.propertyTypeFilter}
-          propertyValueFilter={uiContent.PropertyValueFilter}
+          propertyValueFilter={uiContent.propertyValueFilter}
           setFilter={this.props.setFilter}
           clearFilters={this.props.clearFilters}
         />
-        <PropertyList properties={content.properties} goToProperty={this.goToProperty} />
+        <PropertyList
+          properties={content.properties}
+          goToProperty={this.goToProperty}
+          propertyTypeFilter={uiContent.propertyTypeFilter}
+          propertyValueFilter={uiContent.propertyValueFilter}
+        />
       </div>
     );
   }
