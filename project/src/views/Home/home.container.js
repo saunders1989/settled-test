@@ -3,10 +3,15 @@ import { connect } from 'react-redux';
 import actions from '../../actions';
 
 function mapStateToProps (state) {
-  const { properties: { content } } = state;
+  const { properties: { content }, ui } = state;
+
+  const {
+    content: uiContent
+  } = ui;
 
   return {
-    content
+    content,
+    uiContent
   };
 }
 
@@ -14,6 +19,12 @@ function mapDispatchToProps(dispatch) {
   return {
     getContent() {
       dispatch(actions.fetchProperties());
+    },
+    setFilter(filterType, value) {
+      console.log(filterType, value);
+    },
+    clearFilters() {
+      console.log('cklear');
     }
   };
 }

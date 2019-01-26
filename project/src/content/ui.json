@@ -1,3 +1,30 @@
 {
-  "ui": "uiJson"
+  "propertyTypeFilter": {
+    "label": "Property type",
+    "value": "all",
+    "options": [
+      {
+        "name": "House",
+        "value": "house"
+      },
+      {
+        "name": "Flat",
+        "value": "flat"
+      }
+    ]
+  },
+  "PropertyValueFilter": {
+    "label": "Property value",
+    "value": "all",
+    "options": [
+      {
+        "name": "Under 200,000",
+        "value": "under-200"
+      },
+      {
+        "name": "Over 200,000",
+        "value": "over-200"
+      }
+    ]
+  }
 }

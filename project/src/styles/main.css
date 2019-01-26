@@ -12,3 +12,4 @@
 
 /* organisms */
 @import './components/organisms/property-list.css';
+@import './components/organisms/filters.css';
