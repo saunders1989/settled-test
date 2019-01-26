@@ -17,8 +17,8 @@ class PropertyList extends React.Component {
       return (propertyTypeFilter.value === 'all' || propertyTypeFilter.value === property.propertyType) &&
         (propertyValueFilter.value === 'all' || (propertyValueFilter.value === 'over-200' ?
           property.price > 200000 ? true : false
-        : propertyValueFilter.value === 'under-200' ?
-          property.price <= 200000 ? true : false : false))
+          : propertyValueFilter.value === 'under-200' ?
+            property.price <= 200000 ? true : false : false));
     });
 
     return (

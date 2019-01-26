@@ -12,7 +12,7 @@ class Home extends React.Component {
   }
 
   goToProperty = (index) => {
-    this.props.history.push(`/property/${index}`)
+    this.props.history.push(`/property/${index}`);
   }
 
   render() {
@@ -41,7 +41,9 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
+  getContent: PropTypes.func,
   uiContent: PropTypes.object,
+  history: PropTypes.object,
   content: PropTypes.object,
   setFilter: PropTypes.func,
   clearFilters: PropTypes.func

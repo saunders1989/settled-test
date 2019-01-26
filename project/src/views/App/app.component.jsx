@@ -24,7 +24,9 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  route: PropTypes.any
+  route: PropTypes.any,
+  uiContent: PropTypes.object,
+  getUiContent: PropTypes.func
 };
 
 export default App;

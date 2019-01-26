@@ -15,7 +15,7 @@ class Property extends React.Component {
     if (_.isEmpty(content)) return null;
 
     const property = content.properties[this.props.match.params.id];
-    const { address } = property
+    const { address } = property;
 
     return (
       <div className="container">
@@ -62,7 +62,8 @@ class Property extends React.Component {
 
 Property.propTypes = {
   content: PropTypes.object,
-  match: PropTypes.object
+  match: PropTypes.object,
+  getContent: PropTypes.func
 };
 
 export default Property;

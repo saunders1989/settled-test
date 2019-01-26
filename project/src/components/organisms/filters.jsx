@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classHelper from 'classnames';
 
 class Filters extends React.Component {
   constructor(props) {
@@ -25,8 +24,14 @@ class Filters extends React.Component {
             {
               propertyTypeFilter.options.map((item, index) => {
                 return (
-                  <option key={index} aria-selected={propertyTypeFilter.value === item.value} value={item.value}>{item.name}</option>
-                )
+                  <option
+                    key={index}
+                    aria-selected={propertyTypeFilter.value === item.value}
+                    value={item.value}
+                  >
+                    {item.name}
+                  </option>
+                );
               })
             }
           </select>
@@ -44,8 +49,14 @@ class Filters extends React.Component {
             {
               propertyValueFilter.options.map((item, index) => {
                 return (
-                  <option key={index} aria-selected={propertyValueFilter.value === item.value} value={item.value}>{item.name}</option>
-                )
+                  <option
+                    key={index}
+                    aria-selected={propertyValueFilter.value === item.value}
+                    value={item.value}
+                  >
+                    {item.name}
+                  </option>
+                );
               })
             }
           </select>
