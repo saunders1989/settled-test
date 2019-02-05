@@ -5,10 +5,11 @@
 
 ## Intro
 
-Settled test
-Lists a summarised view of all the properties
-Add filtering functionality on at least two fields in the summary view
-When a property is clicked in the summarised view you show a detailed view of the property.
+### Settled test
+
+- Lists a summarised view of all the properties
+- Add filtering functionality on at least two fields in the summary view
+- When a property is clicked in the summarised view you show a detailed view of the property.
 
 ## Setup
 
